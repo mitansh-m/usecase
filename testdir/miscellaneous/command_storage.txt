@@ -1,0 +1,15 @@
+find ~ -type d -name testdir
+
+#for ((x=0; $x<$days_of_work; x=$(($x+1)))) do
+#    dailywagecalc
+#    totalwage=$(($totalwage+$dwage))
+#done
+
+#for ((day=0 && hour=0; $hour<=100 && $day<=20;  day=$(($day+1)) && hour=$(($hour + $hours)))) do 
+#   dailywagecalc
+#  totalwage=$(($totalwage+$dwage))
+#done
+
+for ((day=0 && hour=0; $hour<=100 && $day<=20;  day=$(($day+1)) && hour=$(($hour + $hours)))) do 
+    dailywagecalc
+done
